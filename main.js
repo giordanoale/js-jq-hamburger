@@ -1,9 +1,8 @@
-var btn = $("a > i");
-var hamburger = $(".hamburger-menu");
-var visible = false;
-
-
 //Prima soluzione
+
+// var btn = $("a > i");
+// var hamburger = $(".hamburger-menu");
+// var visible = false;
 
 // btn.click(
 //     function() {
@@ -20,14 +19,11 @@ var visible = false;
 
 //Seconda Soluzione
 
+var btn = $("a > i");
+var hamburger = $(".hamburger-menu");
+
 btn.click(
     function() {
-        if(visible == false){
-            hamburger.addClass("active");
-            visible = true;
-        } else {
-            hamburger.removeClass("active");
-            visible = false;
-        }
+       hamburger.toggleClass("active");  
     }
 );
